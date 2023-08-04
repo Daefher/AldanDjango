@@ -5,7 +5,7 @@ User = get_user_model()
 
 class company(models.Model):
     system_user_id = models.ForeignKey(User, on_delete=models.CASCADE)
-    companyId = models.IntegerField(primary_key=True)
+    companyId = models.AutoField(primary_key=True)
     name = models.CharField(max_length=100)
     fileStoragePath = models.CharField(max_length=100, null=True)
     ImagesPath = models.CharField(max_length=100, null=True)

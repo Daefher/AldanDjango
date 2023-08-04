@@ -28,6 +28,8 @@ class PostCreateView(
     serializer_class = postSerializer
     queryset = Post.objects.all()
 
+
+
     
 """ class TestView(APIView):
 
