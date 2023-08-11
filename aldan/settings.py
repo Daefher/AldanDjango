@@ -47,7 +47,8 @@ INSTALLED_APPS = [
     'core',
     'system_user',
     'company',
-    'part'
+    'part',
+    'part_qty'
 ]
 
 MIDDLEWARE = [

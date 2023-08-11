@@ -10,8 +10,7 @@ from company.models import (
 )
 from part.permission import AuthorEditCancel
 from .models import (
-    part,
-    partQty,
+    part,    
     partTran
 )
 from .serializers import (

@@ -36,5 +36,7 @@ urlpatterns = [
     #path('api/token/verify', TokenVerifyView.as_view(), name='token_verify'),
     path('login/', include('dj_rest_auth.urls')),
     path('company/', include('company.urls')),  
-    path('part/', include('part.urls'))   
+    path('part/', include('part.urls')),
+    path('partQty/', include('part_qty.urls')) 
+
 ]

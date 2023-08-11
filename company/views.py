@@ -56,8 +56,6 @@ class cancelCompany(
     permission_classes = (CompanyOwnerEditCancel, )
 
 
-
-
 class getCompanyFiles(
         mixins.ListModelMixin,
         generics.GenericAPIView):

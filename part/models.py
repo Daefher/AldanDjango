@@ -22,16 +22,6 @@ class part(models.Model):
     category = models.CharField(max_length=50, null=True)
     subcategory = models.CharField(max_length=50, null=True)
 
-class partQty(models.Model):
-    companyId = models.ForeignKey(company, on_delete=models.CASCADE)
-    partQtyId = models.AutoField(primary_key=True)
-    partId = models.ForeignKey(part, on_delete=models.CASCADE)
-    onHandQty = models.DecimalField(max_digits=18, decimal_places=2)
-    canceledBy = models.IntegerField(null=True)
-    canceledDateTime = models.DateTimeField(null=True)
-    canceled = models.BooleanField(default=False)
-    cancelable = models.BooleanField()
-
 class partTran(models.Model):
     companyId = models.ForeignKey(company, on_delete=models.CASCADE)
     partTranId = models.AutoField(primary_key=True)
