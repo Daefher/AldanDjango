@@ -37,6 +37,7 @@ urlpatterns = [
     path('login/', include('dj_rest_auth.urls')),
     path('company/', include('company.urls')),  
     path('part/', include('part.urls')),
-    path('partQty/', include('part_qty.urls')) 
+    path('partQty/', include('part_qty.urls')),
+    path('salesOrder/', include('salesOrder.urls'))
 
 ]
